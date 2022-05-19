@@ -1,6 +1,6 @@
 name: Introduction to github actions
 
-on: push
+on: [push]
 
 jobs:
   run-shell-command:
