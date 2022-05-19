@@ -1,0 +1,14 @@
+name: Introduction to github actions
+
+on: push
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet github actions from shell command
+        run: echo "Hello github actions"
+      - name: Run multiple commands using pipe
+        run: |
+          node -v
+          npm -v
